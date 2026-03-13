@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mapa Mental - Windows Server</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:#eef2f7;
+}
+
+.node{
+transition:all .3s ease;
+}
+
+.node:hover{
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.connector{
+width:4px;
+margin:auto;
+background:#cbd5e1;
+}
+
+.horizontal{
+height:4px;
+background:#cbd5e1;
+margin:auto;
+}
+
+</style>
+
+</head>
+
+<body class="text-gray-800">
+
+<div class="max-w-7xl mx-auto my-10 bg-white shadow-2xl rounded-3xl overflow-hidden">
+
+<!-- HEADER -->
+
+<div class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white text-center p-10">
+
+<h1 class="text-4xl font-extrabold mb-3">
+Mapa Mental
+</h1>
+
+<p class="text-xl font-light">
+Fundamentos de Sistemas Operativos (Windows Server)
+</p>
+
+</div>
+
+<div class="p-10 bg-gray-50 space-y-10">
+
+<!-- NODO CENTRAL -->
+
+<div class="text-center">
+
+<div class="node inline-block bg-blue-600 text-white px-12 py-6 rounded-2xl shadow-xl">
+
+<h2 class="text-2xl font-bold flex items-center justify-center gap-2">
+
+💻 Windows Server
+
+</h2>
+
+<p class="text-sm mt-2 max-w-xl">
+Windows Server es un sistema operativo diseñado para administrar redes,
+recursos y servicios dentro de organizaciones. Permite controlar usuarios,
+aplicaciones, seguridad y comunicación entre múltiples computadoras.
+</p>
+
+</div>
+
+</div>
+
+<div class="connector h-10"></div>
+
+<!-- RAMAS PRINCIPALES -->
+
+<div class="grid md:grid-cols-2 gap-12">
+
+<!-- RAMA 1 INSTALACIÓN -->
+
+<div class="text-center">
+
+<div class="node bg-white border p-6 rounded-2xl shadow">
+
+<h3 class="font-bold text-blue-700 text-xl flex items-center justify-center gap-2">
+
+⚙️ Instalación de Windows Server
+
+</h3>
+
+<p class="text-sm text-gray-600 mt-2">
+
+El proceso de instalación permite preparar el sistema operativo
+para administrar servidores y recursos de red dentro de una organización.
+
+</p>
+
+</div>
+
+<div class="connector h-8"></div>
+
+<div class="grid gap-4">
+
+<div class="node bg-blue-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-blue-700">
+
+Requisitos del sistema
+
+</h4>
+
+<p class="text-sm">
+Antes de instalar, se deben verificar recursos como procesador,
+memoria RAM, almacenamiento y compatibilidad del hardware.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-blue-700">
+
+Proceso de instalación
+
+</h4>
+
+<p class="text-sm">
+Incluye iniciar desde un medio de instalación, elegir versión
+del sistema, configurar particiones del disco y establecer
+las opciones básicas del servidor.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-blue-700">
+
+Configuración inicial
+
+</h4>
+
+<p class="text-sm">
+Después de instalar el sistema se asigna nombre al servidor,
+contraseña del administrador, dirección IP y ajustes básicos
+de seguridad.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-blue-700">
+
+Administrador del servidor
+
+</h4>
+
+<p class="text-sm">
+Herramienta principal para agregar roles, configurar servicios
+y administrar los recursos del sistema.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RAMA 2 SERVICIOS -->
+
+<div class="text-center">
+
+<div class="node bg-white border p-6 rounded-2xl shadow">
+
+<h3 class="font-bold text-green-700 text-xl flex items-center justify-center gap-2">
+
+🌐 Servicios de infraestructura básica
+
+</h3>
+
+<p class="text-sm text-gray-600 mt-2">
+
+Los servicios de infraestructura permiten que la red funcione
+de forma organizada, segura y eficiente dentro de una empresa.
+
+</p>
+
+</div>
+
+<div class="connector h-8"></div>
+
+<div class="grid gap-4">
+
+<div class="node bg-green-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-green-700">
+
+Active Directory
+
+</h4>
+
+<p class="text-sm">
+Servicio que administra usuarios, computadoras y permisos
+dentro de un dominio. Permite controlar el acceso a los
+recursos de la red.
+</p>
+
+</div>
+
+<div class="node bg-green-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-green-700">
+
+DNS (Domain Name System)
+
+</h4>
+
+<p class="text-sm">
+Traduce los nombres de dominio en direcciones IP para que
+los dispositivos puedan localizar servidores y servicios
+en la red.
+</p>
+
+</div>
+
+<div class="node bg-green-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-green-700">
+
+DHCP
+
+</h4>
+
+<p class="text-sm">
+Asigna automáticamente direcciones IP a los dispositivos
+conectados a la red, evitando configuraciones manuales.
+</p>
+
+</div>
+
+<div class="node bg-green-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-green-700">
+
+Servicios de archivos y almacenamiento
+
+</h4>
+
+<p class="text-sm">
+Permiten compartir carpetas, administrar permisos y
+almacenar información de forma centralizada.
+</p>
+
+</div>
+
+<div class="node bg-green-50 border p-4 rounded-xl">
+
+<h4 class="font-semibold text-green-700">
+
+Servicios de seguridad
+
+</h4>
+
+<p class="text-sm">
+Incluyen control de accesos, políticas de grupo,
+autenticación de usuarios y protección de datos.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="bg-gray-100 p-6 text-xs text-gray-600 text-center">
+
+Fundamentos de Sistemas Operativos | Windows Server  
+Basado en documentación técnica de Microsoft y materiales académicos de administración de servidores.
+
+</div>
+
+</div>
+
+</body>
+
+</html>

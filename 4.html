@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mapa Conceptual - Fundamentos de Sistemas Operativos</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:#eef2f7;
+}
+
+.node{
+transition:all .3s ease;
+}
+
+.node:hover{
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.connector{
+width:4px;
+background:#cbd5e1;
+margin:auto;
+}
+
+</style>
+
+</head>
+
+<body class="text-gray-800">
+
+<div class="max-w-7xl mx-auto my-10 bg-white shadow-2xl rounded-3xl overflow-hidden">
+
+<!-- HEADER -->
+
+<div class="bg-gradient-to-r from-indigo-700 to-blue-900 text-white text-center p-10">
+
+<h1 class="text-4xl font-extrabold mb-3">
+Mapa Conceptual
+</h1>
+
+<p class="text-xl font-light">
+Fundamentos de Sistemas Operativos y Windows Server
+</p>
+
+</div>
+
+<div class="p-10 bg-gray-50 space-y-12">
+
+<!-- NODO CENTRAL -->
+
+<div class="text-center">
+
+<div class="node inline-block bg-blue-600 text-white px-12 py-6 rounded-2xl shadow-xl">
+
+<h2 class="text-2xl font-bold">
+Fundamentos de Sistemas Operativos
+</h2>
+
+<p class="text-sm mt-2 max-w-xl">
+Un sistema operativo es el software encargado de administrar los recursos
+del hardware y permitir la interacción entre el usuario, los programas
+y los dispositivos de una computadora.
+</p>
+
+</div>
+
+</div>
+
+<div class="connector h-10"></div>
+
+<!-- PRIMER BLOQUE -->
+
+<div class="grid md:grid-cols-3 gap-8 text-center">
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Almacenamiento de datos
+</h3>
+
+<p class="text-sm">
+Permite guardar información en dispositivos como discos duros,
+SSD o almacenamiento en red para que pueda ser utilizada posteriormente.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Manejo del sistema de archivos
+</h3>
+
+<p class="text-sm">
+Organiza los archivos en carpetas y estructuras jerárquicas,
+facilitando su acceso, modificación y administración.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Manejo de procesos
+</h3>
+
+<p class="text-sm">
+Administra los programas que se ejecutan en el sistema,
+controlando el uso del procesador y la memoria.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Manejo del Shell
+</h3>
+
+<p class="text-sm">
+Interfaz que permite al usuario comunicarse con el sistema
+operativo mediante comandos o interfaces gráficas.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Administración del sistema
+</h3>
+
+<p class="text-sm">
+Incluye la gestión de usuarios, recursos del hardware
+y configuración general del sistema.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Comunicaciones y redes
+</h3>
+
+<p class="text-sm">
+Permite que los dispositivos intercambien información
+mediante protocolos y conexiones de red.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Administración de redes
+</h3>
+
+<p class="text-sm">
+Gestiona la conexión entre computadoras, servidores
+y dispositivos dentro de una infraestructura de red.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Protección y seguridad
+</h3>
+
+<p class="text-sm">
+Controla accesos, protege información
+y previene amenazas informáticas.
+</p>
+
+</div>
+
+<div class="node bg-blue-50 border p-5 rounded-xl">
+
+<h3 class="font-semibold text-blue-700">
+Operación en la nube
+</h3>
+
+<p class="text-sm">
+Permite ejecutar aplicaciones y almacenar información
+en servidores remotos accesibles desde internet.
+</p>
+
+</div>
+
+</div>
+
+<div class="connector h-12"></div>
+
+<!-- SEGUNDA SECCIÓN -->
+
+<div class="text-center">
+
+<div class="node inline-block bg-green-600 text-white px-12 py-6 rounded-2xl shadow-xl">
+
+<h2 class="text-2xl font-bold">
+Fundamentos de Windows Server
+</h2>
+
+<p class="text-sm mt-2 max-w-xl">
+Windows Server es un sistema operativo diseñado para administrar
+infraestructuras de red, servicios empresariales y recursos
+compartidos dentro de una organización.
+</p>
+
+</div>
+
+</div>
+
+<div class="connector h-10"></div>
+
+<div class="grid md:grid-cols-2 gap-10 text-center">
+
+<!-- INSTALACIÓN -->
+
+<div>
+
+<div class="node bg-green-50 border p-6 rounded-xl">
+
+<h3 class="font-bold text-green-700 text-lg">
+Instalación de Windows Server
+</h3>
+
+<p class="text-sm mt-2">
+Consiste en preparar el servidor mediante la instalación del sistema,
+configuración del hardware, asignación de direcciones IP,
+creación de cuentas administrativas y ajustes iniciales.
+</p>
+
+</div>
+
+</div>
+
+<!-- SERVICIOS -->
+
+<div>
+
+<div class="node bg-green-50 border p-6 rounded-xl">
+
+<h3 class="font-bold text-green-700 text-lg">
+Servicios de infraestructura básica
+</h3>
+
+<p class="text-sm mt-2">
+Incluyen herramientas esenciales como Active Directory,
+DNS, DHCP, servicios de archivos y políticas de seguridad
+que permiten administrar redes empresariales.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="bg-gray-100 p-6 text-xs text-gray-600 text-center">
+
+Mapa conceptual académico basado en fundamentos de sistemas operativos y documentación de Microsoft Windows Server.
+
+</div>
+
+</div>
+
+</body>
+</html>
