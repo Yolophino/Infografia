@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Infografía - Servicios de Internet</title>
+<title>Mapas Conceptuales y Mentales</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,7 +16,11 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:#f1f5f9;
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
 .card{
@@ -24,166 +28,71 @@ transition:all .3s ease;
 }
 
 .card:hover{
-transform:translateY(-6px) scale(1.03);
-box-shadow:0 15px 30px rgba(0,0,0,0.15);
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
 }
 
 </style>
 
 </head>
 
-<body class="text-gray-800">
+<body>
 
-<div class="max-w-6xl mx-auto my-10 bg-white rounded-3xl shadow-2xl overflow-hidden">
+<div class="bg-white rounded-3xl shadow-2xl max-w-4xl w-full p-10 text-center">
 
-<!-- HEADER -->
+<h1 class="text-4xl font-extrabold text-gray-800 mb-4">
 
-<div class="bg-gradient-to-r from-indigo-600 to-blue-800 text-white p-10 text-center">
+Mapas Conceptuales y Mentales
 
-<h1 class="text-4xl font-extrabold mb-4">
-Herramientas y Servicios de Internet
 </h1>
 
-<p class="text-lg text-blue-100">
-Protocolos y tecnologías que permiten la comunicación y el intercambio de información en la red
+<p class="text-gray-600 mb-10">
+
+Selecciona uno de los mapas para visualizar la información.
+
 </p>
 
-</div>
+<div class="grid md:grid-cols-2 gap-6">
 
-<div class="p-10 bg-gray-50 space-y-10">
+<!-- BOTON 1 -->
 
-<!-- GRID -->
+<a href="1.html" class="card block bg-blue-600 text-white p-8 rounded-2xl text-xl font-semibold hover:bg-blue-700">
 
-<div class="grid md:grid-cols-3 gap-6">
+Actividad 7 (T. Internet)
 
-<!-- HTTP -->
+</a>
 
-<div class="card bg-blue-50 border border-blue-200 p-6 rounded-2xl">
+<!-- BOTON 2 -->
 
-<h2 class="text-xl font-bold text-blue-700 mb-2">HTTP</h2>
+<a href="2.html" class="card block bg-purple-600 text-white p-8 rounded-2xl text-xl font-semibold hover:bg-purple-700">
 
-<p class="text-sm">
-Protocolo utilizado para transferir páginas web.
-Permite la comunicación entre navegadores y servidores.
-</p>
+Actividad integradora (T. Internet)
 
-</div>
+</a>
 
-<!-- FTP -->
+<!-- BOTON 3 -->
 
-<div class="card bg-green-50 border border-green-200 p-6 rounded-2xl">
+<a href="3.html" class="card block bg-green-600 text-white p-8 rounded-2xl text-xl font-semibold hover:bg-green-700">
 
-<h2 class="text-xl font-bold text-green-700 mb-2">FTP</h2>
+Actividad 7 (Ad. Servidores)
 
-<p class="text-sm">
-Protocolo para transferir archivos entre computadoras
-a través de una red.
-</p>
+</a>
 
-</div>
+<!-- BOTON 4 -->
 
-<!-- SMTP -->
+<a href="4.html" class="card block bg-orange-500 text-white p-8 rounded-2xl text-xl font-semibold hover:bg-orange-600">
 
-<div class="card bg-yellow-50 border border-yellow-200 p-6 rounded-2xl">
+Actividad integradora (Ad. Servidores)
 
-<h2 class="text-xl font-bold text-yellow-700 mb-2">SMTP</h2>
-
-<p class="text-sm">
-Protocolo utilizado para el envío de correos electrónicos
-entre servidores.
-</p>
+</a>
 
 </div>
 
-<!-- SSH -->
+<footer class="mt-10 text-sm text-gray-500">
 
-<div class="card bg-purple-50 border border-purple-200 p-6 rounded-2xl">
+Proyecto académico | Visualización de mapas conceptuales y mentales
 
-<h2 class="text-xl font-bold text-purple-700 mb-2">SSH</h2>
-
-<p class="text-sm">
-Permite conectarse de forma segura a un servidor remoto
-mediante cifrado.
-</p>
-
-</div>
-
-<!-- TELNET -->
-
-<div class="card bg-red-50 border border-red-200 p-6 rounded-2xl">
-
-<h2 class="text-xl font-bold text-red-700 mb-2">Telnet</h2>
-
-<p class="text-sm">
-Protocolo para acceso remoto a equipos, pero sin cifrado,
-por lo que es menos seguro que SSH.
-</p>
-
-</div>
-
-<!-- IRC -->
-
-<div class="card bg-indigo-50 border border-indigo-200 p-6 rounded-2xl">
-
-<h2 class="text-xl font-bold text-indigo-700 mb-2">IRC</h2>
-
-<p class="text-sm">
-Sistema de chat en tiempo real basado en canales
-de comunicación en Internet.
-</p>
-
-</div>
-
-<!-- VoIP -->
-
-<div class="card bg-pink-50 border border-pink-200 p-6 rounded-2xl">
-
-<h2 class="text-xl font-bold text-pink-700 mb-2">VoIP</h2>
-
-<p class="text-sm">
-Tecnología que permite realizar llamadas de voz
-a través de Internet.
-</p>
-
-</div>
-
-<!-- P2P -->
-
-<div class="card bg-orange-50 border border-orange-200 p-6 rounded-2xl">
-
-<h2 class="text-xl font-bold text-orange-700 mb-2">P2P</h2>
-
-<p class="text-sm">
-Modelo de red donde los equipos comparten recursos
-directamente sin un servidor central.
-</p>
-
-</div>
-
-<!-- IPTV -->
-
-<div class="card bg-teal-50 border border-teal-200 p-6 rounded-2xl">
-
-<h2 class="text-xl font-bold text-teal-700 mb-2">IPTV</h2>
-
-<p class="text-sm">
-Servicio que transmite contenido televisivo
-a través de Internet.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- FOOTER -->
-
-<div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
-
-Infografía educativa sobre servicios de Internet
-
-</div>
+</footer>
 
 </div>
 
