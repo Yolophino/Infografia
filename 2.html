@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mapa Conceptual - Tecnologías Web y Google</title>
+<title>Infografía - Tecnologías Multimedia</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,25 +19,13 @@ font-family:'Poppins',sans-serif;
 background:#f1f5f9;
 }
 
-.node{
+.card{
 transition:all .3s ease;
 }
 
-.node:hover{
-transform:translateY(-6px) scale(1.02);
+.card:hover{
+transform:translateY(-6px) scale(1.03);
 box-shadow:0 15px 30px rgba(0,0,0,0.15);
-}
-
-.connector{
-width:4px;
-margin:auto;
-background:#cbd5e1;
-}
-
-.horizontal{
-height:4px;
-background:#cbd5e1;
-margin:auto;
 }
 
 </style>
@@ -45,284 +34,167 @@ margin:auto;
 
 <body class="text-gray-800">
 
-<div class="max-w-7xl mx-auto my-10 bg-white shadow-2xl rounded-3xl overflow-hidden">
+<div class="max-w-7xl mx-auto my-10 bg-white rounded-3xl shadow-2xl overflow-hidden">
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-indigo-600 to-blue-800 text-white text-center p-10">
+<div class="bg-gradient-to-r from-pink-600 to-purple-700 text-white p-10 text-center">
 
-<h1 class="text-4xl font-extrabold mb-3">
-Mapa Conceptual
+<h1 class="text-4xl font-extrabold mb-4">
+Tecnologías Multimedia
 </h1>
 
-<p class="text-xl font-light">
-Tecnologías Web, Motores de Búsqueda y Estrategias de Google
+<p class="text-lg text-pink-100">
+Elementos y herramientas que permiten la integración de contenido digital en Internet
 </p>
 
 </div>
 
-<div class="p-10 bg-gray-50 space-y-10">
+<div class="p-10 bg-gray-50 space-y-12">
 
-<!-- NODO CENTRAL -->
+<!-- DEFINICIÓN -->
 
-<div class="text-center">
+<div class="card bg-white p-8 rounded-2xl shadow border">
 
-<div class="node inline-block bg-blue-600 text-white px-10 py-6 rounded-2xl shadow-xl">
-
-<h2 class="text-2xl font-bold">
-Tecnologías de Internet
+<h2 class="text-2xl font-bold text-purple-700 mb-3">
+🎬 ¿Qué es la multimedia?
 </h2>
 
-<p class="text-sm mt-2 max-w-lg">
-Las tecnologías de internet permiten acceder a información, crear sitios web,
-buscar contenido y desarrollar modelos de negocio digitales como el que utiliza Google.
+<p class="text-gray-600 leading-relaxed">
+La multimedia es la integración de diferentes tipos de contenido digital como texto,
+audio, imágenes, video y animaciones en un mismo entorno. En Internet, la multimedia
+permite crear experiencias interactivas y dinámicas que facilitan la comunicación,
+el aprendizaje y el entretenimiento.
 </p>
 
 </div>
 
+<!-- CARACTERÍSTICAS -->
+
+<div class="card bg-purple-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-purple-700 mb-6">
+✨ Características principales
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Interactividad</h3>
+<p class="text-sm">Permite que el usuario participe activamente en el contenido.</p>
 </div>
 
-<div class="connector h-10"></div>
-
-<!-- RAMAS PRINCIPALES -->
-
-<div class="grid md:grid-cols-3 gap-10 text-center">
-
-<!-- TEMA 1 -->
-
-<div>
-
-<div class="node bg-white p-6 rounded-2xl border shadow">
-
-<h3 class="font-bold text-blue-700 text-lg mb-3">
-Páginas Web
-</h3>
-
-<p class="text-sm text-gray-600">
-Los sitios web pueden construirse de diferentes maneras dependiendo
-del tipo de contenido y la interacción con el usuario.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Integración</h3>
+<p class="text-sm">Combina diferentes medios como texto, audio y video.</p>
 </div>
 
-<div class="connector h-8"></div>
-
-<div class="grid gap-4">
-
-<div class="node bg-blue-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-blue-700">
-Páginas Estáticas
-</h4>
-
-<p class="text-sm">
-Su contenido permanece fijo. Están construidas principalmente con HTML
-y muestran la misma información a todos los usuarios.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Digitalización</h3>
+<p class="text-sm">La información se almacena y transmite en formato digital.</p>
 </div>
 
-<div class="node bg-blue-50 p-4 rounded-xl border">
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Accesibilidad</h3>
+<p class="text-sm">Disponible desde múltiples dispositivos conectados a Internet.</p>
+</div>
 
-<h4 class="font-semibold text-blue-700">
-Páginas Dinámicas
-</h4>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Tiempo real</h3>
+<p class="text-sm">Permite reproducción instantánea (streaming).</p>
+</div>
 
-<p class="text-sm">
-El contenido cambia dependiendo del usuario o la información almacenada
-en bases de datos. Se desarrollan con lenguajes como PHP, JavaScript o Python.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Escalabilidad</h3>
+<p class="text-sm">Puede adaptarse a diferentes usuarios y plataformas.</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- TEMA 2 -->
+<!-- TECNOLOGÍAS -->
 
-<div>
+<div class="card bg-blue-50 p-8 rounded-2xl border">
 
-<div class="node bg-white p-6 rounded-2xl border shadow">
+<h2 class="text-2xl font-bold text-blue-700 mb-6">
+🌐 Tecnologías multimedia más utilizadas en Internet
+</h2>
 
-<h3 class="font-bold text-purple-700 text-lg mb-3">
-Motores de Búsqueda
-</h3>
+<div class="grid md:grid-cols-3 gap-6">
 
-<p class="text-sm text-gray-600">
-Son sistemas diseñados para localizar información en internet
-a partir de palabras clave ingresadas por los usuarios.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Streaming</h3>
+<p class="text-sm">Permite reproducir audio y video sin descarga completa.</p>
 </div>
 
-<div class="connector h-8"></div>
-
-<div class="grid gap-4">
-
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-Índices vs Motores
-</h4>
-
-<p class="text-sm">
-Los índices eran directorios organizados manualmente,
-mientras que los motores actuales utilizan programas
-automatizados para rastrear la web.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">HTML5</h3>
+<p class="text-sm">Soporta video, audio y gráficos directamente en el navegador.</p>
 </div>
 
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-Funcionamiento
-</h4>
-
-<p class="text-sm">
-Trabajan mediante tres procesos principales:
-rastreo (crawling), indexación de contenido
-y clasificación de resultados según relevancia.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">WebRTC</h3>
+<p class="text-sm">Permite comunicación en tiempo real (video llamadas).</p>
 </div>
 
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-Ejemplos
-</h4>
-
-<p class="text-sm">
-Google, Bing, Baidu, Yandex y DuckDuckGo
-son algunos de los motores más utilizados.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">CDN</h3>
+<p class="text-sm">Distribuye contenido multimedia rápidamente a nivel global.</p>
 </div>
 
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-Meta-Search
-</h4>
-
-<p class="text-sm">
-Un metabuscador envía la consulta a varios
-motores de búsqueda al mismo tiempo y
-combina los resultados.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Codecs</h3>
+<p class="text-sm">Comprimen y descomprimen audio y video (ej. H.264).</p>
 </div>
 
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-robots.txt
-</h4>
-
-<p class="text-sm">
-Archivo que indica a los bots qué partes
-del sitio pueden rastrear y cuáles no.
-</p>
-
-</div>
-
-<div class="node bg-purple-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-purple-700">
-Búsqueda de Mapas
-</h4>
-
-<p class="text-sm">
-Utiliza sistemas GIS, datos GPS y algoritmos
-de rutas para localizar lugares y calcular
-trayectos.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Formatos multimedia</h3>
+<p class="text-sm">MP4, MP3, JPEG, PNG, entre otros.</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- TEMA 3 -->
+<!-- PARTES DE LA MULTIMEDIA -->
 
-<div>
+<div class="card bg-green-50 p-8 rounded-2xl border">
 
-<div class="node bg-white p-6 rounded-2xl border shadow">
+<h2 class="text-2xl font-bold text-green-700 mb-6">
+🧩 Componentes de la multimedia
+</h2>
 
-<h3 class="font-bold text-green-700 text-lg mb-3">
-Estrategias de Google
-</h3>
+<div class="grid md:grid-cols-2 gap-6">
 
-<p class="text-sm text-gray-600">
-Google se convirtió en una empresa punto com
-exitosa mediante diferentes estrategias digitales.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Texto</h3>
+<p class="text-sm">Elemento base para transmitir información escrita.</p>
 </div>
 
-<div class="connector h-8"></div>
-
-<div class="grid gap-4">
-
-<div class="node bg-green-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-green-700">
-Servicios Gratuitos
-</h4>
-
-<p class="text-sm">
-Ofrece herramientas como Gmail,
-Maps y YouTube que atraen
-millones de usuarios.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Imágenes</h3>
+<p class="text-sm">Representaciones visuales que facilitan la comprensión.</p>
 </div>
 
-<div class="node bg-green-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-green-700">
-Publicidad Digital
-</h4>
-
-<p class="text-sm">
-El modelo Google Ads permite a
-empresas anunciarse cuando los
-usuarios buscan productos.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Audio</h3>
+<p class="text-sm">Permite transmitir sonido, música o voz.</p>
 </div>
 
-<div class="node bg-green-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-green-700">
-Uso de Datos
-</h4>
-
-<p class="text-sm">
-Analiza información de búsquedas
-para mejorar servicios y personalizar
-resultados.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Video</h3>
+<p class="text-sm">Combina imagen y sonido en movimiento.</p>
 </div>
 
-<div class="node bg-green-50 p-4 rounded-xl border">
-
-<h4 class="font-semibold text-green-700">
-Ecosistema Digital
-</h4>
-
-<p class="text-sm">
-Integra Android, Chrome, Maps,
-YouTube y otros servicios dentro
-de su propio entorno digital.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Animación</h3>
+<p class="text-sm">Movimiento visual generado digitalmente.</p>
 </div>
 
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Interactividad</h3>
+<p class="text-sm">Permite al usuario interactuar con el contenido.</p>
 </div>
 
 </div>
@@ -333,16 +205,12 @@ de su propio entorno digital.
 
 <!-- FOOTER -->
 
-<div class="bg-gray-100 p-6 text-xs text-gray-600 text-center">
-
-Fuentes consultadas:  
-Chaffey, D. (2022). Digital Business and E-Commerce Management. Pearson.  
-Google Search Central Documentation.  
-https://developers.google.com/search  
-
+<div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
+Infografía educativa sobre tecnologías multimedia en Internet
 </div>
 
 </div>
 
 </body>
+
 </html>
