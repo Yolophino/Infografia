@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mapa Mental - Windows Server</title>
+<title>Infografía - Ecosistema de Internet</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,28 +16,16 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:#eef2f7;
+background:#f1f5f9;
 }
 
-.node{
+.card{
 transition:all .3s ease;
 }
 
-.node:hover{
+.card:hover{
 transform:translateY(-6px) scale(1.03);
 box-shadow:0 15px 30px rgba(0,0,0,0.15);
-}
-
-.connector{
-width:4px;
-margin:auto;
-background:#cbd5e1;
-}
-
-.horizontal{
-height:4px;
-background:#cbd5e1;
-margin:auto;
 }
 
 </style>
@@ -46,245 +34,151 @@ margin:auto;
 
 <body class="text-gray-800">
 
-<div class="max-w-7xl mx-auto my-10 bg-white shadow-2xl rounded-3xl overflow-hidden">
+<div class="max-w-7xl mx-auto my-10 bg-white rounded-3xl shadow-2xl overflow-hidden">
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white text-center p-10">
+<div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-10 text-center">
 
-<h1 class="text-4xl font-extrabold mb-3">
-Mapa Mental
+<h1 class="text-4xl font-extrabold mb-4">
+🌐 Ecosistema de Internet
 </h1>
 
-<p class="text-xl font-light">
-Fundamentos de Sistemas Operativos (Windows Server)
+<p class="text-lg text-blue-100">
+Relación entre arquitectura, web y tecnologías multimedia
 </p>
 
 </div>
 
-<div class="p-10 bg-gray-50 space-y-10">
+<div class="p-10 bg-gray-50 space-y-12">
 
-<!-- NODO CENTRAL -->
+<!-- ARQUITECTURA DE INTERNET -->
 
-<div class="text-center">
+<div class="card bg-white p-8 rounded-2xl shadow border">
 
-<div class="node inline-block bg-blue-600 text-white px-12 py-6 rounded-2xl shadow-xl">
-
-<h2 class="text-2xl font-bold flex items-center justify-center gap-2">
-
-💻 Windows Server
-
+<h2 class="text-2xl font-bold text-indigo-700 mb-6">
+🏗️ Arquitectura de Internet
 </h2>
 
-<p class="text-sm mt-2 max-w-xl">
-Windows Server es un sistema operativo diseñado para administrar redes,
-recursos y servicios dentro de organizaciones. Permite controlar usuarios,
-aplicaciones, seguridad y comunicación entre múltiples computadoras.
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-indigo-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Modelo Cliente-Servidor</h3>
+<p class="text-sm">Los clientes solicitan servicios y los servidores responden con recursos o información.</p>
+</div>
+
+<div class="bg-indigo-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Protocolos</h3>
+<p class="text-sm">TCP/IP permite la comunicación; HTTP y HTTPS gestionan la web; DNS traduce dominios a IP.</p>
+</div>
+
+<div class="bg-indigo-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Infraestructura</h3>
+<p class="text-sm">Incluye routers, servidores y proveedores de Internet (ISP) que conectan la red global.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- WORLD WIDE WEB -->
+
+<div class="card bg-purple-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-purple-700 mb-6">
+🌍 Funcionamiento de la World Wide Web
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Solicitud-Respuesta</h3>
+<p class="text-sm">El navegador envía una petición y el servidor responde con contenido web.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Navegadores y Servidores</h3>
+<p class="text-sm">El navegador interpreta el contenido y el servidor lo almacena y distribuye.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">DNS</h3>
+<p class="text-sm">Convierte nombres de dominio en direcciones IP para localizar servidores.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Carga de una página</h3>
+<p class="text-sm">Incluye búsqueda DNS, conexión, descarga de archivos y renderizado visual.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- TECNOLOGÍAS MULTIMEDIA -->
+
+<div class="card bg-pink-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-pink-700 mb-6">
+🎬 Tecnologías Multimedia en Internet
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Tipos de contenido</h3>
+<p class="text-sm">Incluye audio, video, imágenes y animaciones que enriquecen la experiencia digital.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Formatos y compresión</h3>
+<p class="text-sm">Permiten optimizar archivos (MP4, MP3, JPEG) para transmisión eficiente.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Streaming</h3>
+<p class="text-sm">Transmisión en tiempo real sin necesidad de descarga completa.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Aplicaciones actuales</h3>
+<p class="text-sm">Plataformas, redes sociales y servicios digitales que integran contenido multimedia.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- RELACIÓN ENTRE LOS TEMAS -->
+
+<div class="card bg-green-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-green-700 mb-6">
+🔗 Relación entre los componentes
+</h2>
+
+<p class="text-gray-700 leading-relaxed mb-6">
+La arquitectura de Internet proporciona la base física y lógica que permite la comunicación entre dispositivos.
+Sobre esta estructura funciona la World Wide Web, que utiliza protocolos para intercambiar información mediante
+el modelo cliente-servidor. A su vez, las tecnologías multimedia aprovechan este entorno para distribuir contenido
+dinámico como video, audio e imágenes, mejorando la experiencia del usuario.
 </p>
 
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Arquitectura → Web</h3>
+<p class="text-sm">La infraestructura permite que navegadores y servidores se comuniquen.</p>
 </div>
 
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Web → Multimedia</h3>
+<p class="text-sm">La web distribuye contenido multimedia a través de páginas y aplicaciones.</p>
 </div>
 
-<div class="connector h-10"></div>
-
-<!-- RAMAS PRINCIPALES -->
-
-<div class="grid md:grid-cols-2 gap-12">
-
-<!-- RAMA 1 INSTALACIÓN -->
-
-<div class="text-center">
-
-<div class="node bg-white border p-6 rounded-2xl shadow">
-
-<h3 class="font-bold text-blue-700 text-xl flex items-center justify-center gap-2">
-
-⚙️ Instalación de Windows Server
-
-</h3>
-
-<p class="text-sm text-gray-600 mt-2">
-
-El proceso de instalación permite preparar el sistema operativo
-para administrar servidores y recursos de red dentro de una organización.
-
-</p>
-
-</div>
-
-<div class="connector h-8"></div>
-
-<div class="grid gap-4">
-
-<div class="node bg-blue-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-blue-700">
-
-Requisitos del sistema
-
-</h4>
-
-<p class="text-sm">
-Antes de instalar, se deben verificar recursos como procesador,
-memoria RAM, almacenamiento y compatibilidad del hardware.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-blue-700">
-
-Proceso de instalación
-
-</h4>
-
-<p class="text-sm">
-Incluye iniciar desde un medio de instalación, elegir versión
-del sistema, configurar particiones del disco y establecer
-las opciones básicas del servidor.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-blue-700">
-
-Configuración inicial
-
-</h4>
-
-<p class="text-sm">
-Después de instalar el sistema se asigna nombre al servidor,
-contraseña del administrador, dirección IP y ajustes básicos
-de seguridad.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-blue-700">
-
-Administrador del servidor
-
-</h4>
-
-<p class="text-sm">
-Herramienta principal para agregar roles, configurar servicios
-y administrar los recursos del sistema.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RAMA 2 SERVICIOS -->
-
-<div class="text-center">
-
-<div class="node bg-white border p-6 rounded-2xl shadow">
-
-<h3 class="font-bold text-green-700 text-xl flex items-center justify-center gap-2">
-
-🌐 Servicios de infraestructura básica
-
-</h3>
-
-<p class="text-sm text-gray-600 mt-2">
-
-Los servicios de infraestructura permiten que la red funcione
-de forma organizada, segura y eficiente dentro de una empresa.
-
-</p>
-
-</div>
-
-<div class="connector h-8"></div>
-
-<div class="grid gap-4">
-
-<div class="node bg-green-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-green-700">
-
-Active Directory
-
-</h4>
-
-<p class="text-sm">
-Servicio que administra usuarios, computadoras y permisos
-dentro de un dominio. Permite controlar el acceso a los
-recursos de la red.
-</p>
-
-</div>
-
-<div class="node bg-green-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-green-700">
-
-DNS (Domain Name System)
-
-</h4>
-
-<p class="text-sm">
-Traduce los nombres de dominio en direcciones IP para que
-los dispositivos puedan localizar servidores y servicios
-en la red.
-</p>
-
-</div>
-
-<div class="node bg-green-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-green-700">
-
-DHCP
-
-</h4>
-
-<p class="text-sm">
-Asigna automáticamente direcciones IP a los dispositivos
-conectados a la red, evitando configuraciones manuales.
-</p>
-
-</div>
-
-<div class="node bg-green-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-green-700">
-
-Servicios de archivos y almacenamiento
-
-</h4>
-
-<p class="text-sm">
-Permiten compartir carpetas, administrar permisos y
-almacenar información de forma centralizada.
-</p>
-
-</div>
-
-<div class="node bg-green-50 border p-4 rounded-xl">
-
-<h4 class="font-semibold text-green-700">
-
-Servicios de seguridad
-
-</h4>
-
-<p class="text-sm">
-Incluyen control de accesos, políticas de grupo,
-autenticación de usuarios y protección de datos.
-</p>
-
-</div>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Multimedia → Usuario</h3>
+<p class="text-sm">El usuario interactúa con contenido dinámico en tiempo real.</p>
 </div>
 
 </div>
@@ -295,11 +189,8 @@ autenticación de usuarios y protección de datos.
 
 <!-- FOOTER -->
 
-<div class="bg-gray-100 p-6 text-xs text-gray-600 text-center">
-
-Fundamentos de Sistemas Operativos | Windows Server  
-Basado en documentación técnica de Microsoft y materiales académicos de administración de servidores.
-
+<div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
+Infografía educativa sobre el ecosistema y funcionamiento de Internet
 </div>
 
 </div>
