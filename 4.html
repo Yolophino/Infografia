@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mapa Conceptual - Fundamentos de Sistemas Operativos</title>
+<title>Infografía - Administración de Redes</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,22 +16,16 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:#eef2f7;
+background:#f1f5f9;
 }
 
-.node{
+.card{
 transition:all .3s ease;
 }
 
-.node:hover{
+.card:hover{
 transform:translateY(-6px) scale(1.03);
 box-shadow:0 15px 30px rgba(0,0,0,0.15);
-}
-
-.connector{
-width:4px;
-background:#cbd5e1;
-margin:auto;
 }
 
 </style>
@@ -40,231 +34,176 @@ margin:auto;
 
 <body class="text-gray-800">
 
-<div class="max-w-7xl mx-auto my-10 bg-white shadow-2xl rounded-3xl overflow-hidden">
+<div class="max-w-7xl mx-auto my-10 bg-white rounded-3xl shadow-2xl overflow-hidden">
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-indigo-700 to-blue-900 text-white text-center p-10">
+<div class="bg-gradient-to-r from-green-600 to-teal-700 text-white p-10 text-center">
 
-<h1 class="text-4xl font-extrabold mb-3">
-Mapa Conceptual
+<h1 class="text-4xl font-extrabold mb-4">
+🖥️ Administración de Redes
 </h1>
 
-<p class="text-xl font-light">
-Fundamentos de Sistemas Operativos y Windows Server
+<p class="text-lg text-green-100">
+Fundamentos, gestión de cuentas y mantenimiento del sistema
 </p>
 
 </div>
 
 <div class="p-10 bg-gray-50 space-y-12">
 
-<!-- NODO CENTRAL -->
+<!-- FUNDAMENTOS -->
 
-<div class="text-center">
+<div class="card bg-white p-8 rounded-2xl shadow border">
 
-<div class="node inline-block bg-blue-600 text-white px-12 py-6 rounded-2xl shadow-xl">
-
-<h2 class="text-2xl font-bold">
-Fundamentos de Sistemas Operativos
+<h2 class="text-2xl font-bold text-teal-700 mb-6">
+🌐 Fundamentos de Administración de Redes
 </h2>
 
-<p class="text-sm mt-2 max-w-xl">
-Un sistema operativo es el software encargado de administrar los recursos
-del hardware y permitir la interacción entre el usuario, los programas
-y los dispositivos de una computadora.
-</p>
+<div class="grid md:grid-cols-3 gap-6">
 
+<div class="bg-teal-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Concepto y tipos de red</h3>
+<p class="text-sm">Conjunto de dispositivos interconectados (LAN, WAN, MAN).</p>
 </div>
 
+<div class="bg-teal-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Modelo cliente-servidor</h3>
+<p class="text-sm">Los clientes solicitan recursos y los servidores los proporcionan.</p>
 </div>
 
-<div class="connector h-10"></div>
-
-<!-- PRIMER BLOQUE -->
-
-<div class="grid md:grid-cols-3 gap-8 text-center">
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Almacenamiento de datos
-</h3>
-
-<p class="text-sm">
-Permite guardar información en dispositivos como discos duros,
-SSD o almacenamiento en red para que pueda ser utilizada posteriormente.
-</p>
-
+<div class="bg-teal-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Direccionamiento IP</h3>
+<p class="text-sm">Identifica de forma única a cada dispositivo en la red.</p>
 </div>
 
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Manejo del sistema de archivos
-</h3>
-
-<p class="text-sm">
-Organiza los archivos en carpetas y estructuras jerárquicas,
-facilitando su acceso, modificación y administración.
-</p>
-
+<div class="bg-teal-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Servicios de red</h3>
+<p class="text-sm">DNS, DHCP y Active Directory gestionan recursos y usuarios.</p>
 </div>
 
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Manejo de procesos
-</h3>
-
-<p class="text-sm">
-Administra los programas que se ejecutan en el sistema,
-controlando el uso del procesador y la memoria.
-</p>
-
+<div class="bg-teal-50 p-5 rounded-xl border">
+<h3 class="font-semibold">Seguridad básica</h3>
+<p class="text-sm">Protección mediante firewalls, contraseñas y políticas.</p>
 </div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Manejo del Shell
-</h3>
-
-<p class="text-sm">
-Interfaz que permite al usuario comunicarse con el sistema
-operativo mediante comandos o interfaces gráficas.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Administración del sistema
-</h3>
-
-<p class="text-sm">
-Incluye la gestión de usuarios, recursos del hardware
-y configuración general del sistema.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Comunicaciones y redes
-</h3>
-
-<p class="text-sm">
-Permite que los dispositivos intercambien información
-mediante protocolos y conexiones de red.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Administración de redes
-</h3>
-
-<p class="text-sm">
-Gestiona la conexión entre computadoras, servidores
-y dispositivos dentro de una infraestructura de red.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Protección y seguridad
-</h3>
-
-<p class="text-sm">
-Controla accesos, protege información
-y previene amenazas informáticas.
-</p>
-
-</div>
-
-<div class="node bg-blue-50 border p-5 rounded-xl">
-
-<h3 class="font-semibold text-blue-700">
-Operación en la nube
-</h3>
-
-<p class="text-sm">
-Permite ejecutar aplicaciones y almacenar información
-en servidores remotos accesibles desde internet.
-</p>
 
 </div>
 
 </div>
 
-<div class="connector h-12"></div>
+<!-- CUENTAS -->
 
-<!-- SEGUNDA SECCIÓN -->
+<div class="card bg-blue-50 p-8 rounded-2xl border">
 
-<div class="text-center">
-
-<div class="node inline-block bg-green-600 text-white px-12 py-6 rounded-2xl shadow-xl">
-
-<h2 class="text-2xl font-bold">
-Fundamentos de Windows Server
+<h2 class="text-2xl font-bold text-blue-700 mb-6">
+👤 Cuentas de Computadoras
 </h2>
 
-<p class="text-sm mt-2 max-w-xl">
-Windows Server es un sistema operativo diseñado para administrar
-infraestructuras de red, servicios empresariales y recursos
-compartidos dentro de una organización.
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Tipos de cuentas</h3>
+<p class="text-sm">Usuarios, equipos y administradores con distintos niveles de control.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Gestión de usuarios</h3>
+<p class="text-sm">Creación, modificación y eliminación de cuentas.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Permisos y acceso</h3>
+<p class="text-sm">Definen qué recursos puede usar cada usuario.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Autenticación</h3>
+<p class="text-sm">Verifica identidad; autorización define acciones permitidas.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Entornos de dominio</h3>
+<p class="text-sm">Centralizan la administración de cuentas en la red.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- MANTENIMIENTO -->
+
+<div class="card bg-purple-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-purple-700 mb-6">
+🛠️ Mantenimiento del Sistema Operativo de Red
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Actualizaciones</h3>
+<p class="text-sm">Parches para mejorar seguridad y rendimiento.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Monitoreo</h3>
+<p class="text-sm">Supervisión del estado y desempeño del sistema.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Backups</h3>
+<p class="text-sm">Respaldo y recuperación ante fallos o pérdida de datos.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Recursos</h3>
+<p class="text-sm">Gestión de CPU, memoria y almacenamiento.</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Seguridad</h3>
+<p class="text-sm">Uso de antivirus, firewall y registros de actividad.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- INTEGRACIÓN -->
+
+<div class="card bg-yellow-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-yellow-700 mb-6">
+🔗 Integración de los Elementos
+</h2>
+
+<p class="text-gray-700 leading-relaxed mb-6">
+La administración de redes integra usuarios, servidores y mantenimiento para garantizar
+el funcionamiento continuo. Los usuarios interactúan con el servidor mediante cuentas,
+las cuales son gestionadas dentro del sistema. El mantenimiento asegura que los servicios
+permanezcan disponibles, seguros y eficientes.
 </p>
 
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Usuario → Servidor</h3>
+<p class="text-sm">Acceso a recursos mediante autenticación.</p>
 </div>
 
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Gestión de cuentas</h3>
+<p class="text-sm">Control centralizado de usuarios y permisos.</p>
 </div>
 
-<div class="connector h-10"></div>
-
-<div class="grid md:grid-cols-2 gap-10 text-center">
-
-<!-- INSTALACIÓN -->
-
-<div>
-
-<div class="node bg-green-50 border p-6 rounded-xl">
-
-<h3 class="font-bold text-green-700 text-lg">
-Instalación de Windows Server
-</h3>
-
-<p class="text-sm mt-2">
-Consiste en preparar el servidor mediante la instalación del sistema,
-configuración del hardware, asignación de direcciones IP,
-creación de cuentas administrativas y ajustes iniciales.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Mantenimiento</h3>
+<p class="text-sm">Garantiza disponibilidad y seguridad del sistema.</p>
 </div>
 
-</div>
-
-<!-- SERVICIOS -->
-
-<div>
-
-<div class="node bg-green-50 border p-6 rounded-xl">
-
-<h3 class="font-bold text-green-700 text-lg">
-Servicios de infraestructura básica
-</h3>
-
-<p class="text-sm mt-2">
-Incluyen herramientas esenciales como Active Directory,
-DNS, DHCP, servicios de archivos y políticas de seguridad
-que permiten administrar redes empresariales.
-</p>
-
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Flujo general</h3>
+<p class="text-sm">Usuario solicita → servidor valida → sistema responde → monitoreo continuo.</p>
 </div>
 
 </div>
@@ -275,13 +214,12 @@ que permiten administrar redes empresariales.
 
 <!-- FOOTER -->
 
-<div class="bg-gray-100 p-6 text-xs text-gray-600 text-center">
-
-Mapa conceptual académico basado en fundamentos de sistemas operativos y documentación de Microsoft Windows Server.
-
+<div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
+Infografía educativa sobre administración de redes y sistemas
 </div>
 
 </div>
 
 </body>
+
 </html>
