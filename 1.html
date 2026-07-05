@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Infografía - Organización y Arquitectura Computacional</title>
+<title>Infografía - Memoria en la Arquitectura Computacional</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,7 +26,7 @@ transition:all .3s ease;
 
 .card:hover{
 transform:translateY(-6px) scale(1.03);
-box-shadow:0 15px 30px rgba(0,0,0,0.15);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 </style>
@@ -39,201 +39,221 @@ box-shadow:0 15px 30px rgba(0,0,0,0.15);
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 text-white p-10 text-center">
+<div class="bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-800 text-white p-10 text-center">
 
 <h1 class="text-4xl font-extrabold mb-4">
-💻 Organización y Arquitectura Computacional
+🧠 Organización y Arquitectura Computacional
 </h1>
 
-<p class="text-lg text-blue-100">
-Historia, componentes, lógica digital y CPU: los pilares de la computación moderna
+<p class="text-lg text-cyan-100">
+La memoria como elemento esencial del procesamiento de la información
 </p>
 
 </div>
 
 <div class="p-10 bg-gray-50 space-y-12">
 
-<!-- VISIÓN GENERAL -->
+<!-- INTRODUCCIÓN -->
 
 <div class="card bg-white p-8 rounded-2xl shadow border">
 
-<h2 class="text-2xl font-bold text-indigo-700 mb-3">
-🎯 Visión General
+<h2 class="text-2xl font-bold text-blue-700 mb-3">
+🎯 ¿Por qué es importante la memoria?
 </h2>
 
 <p class="text-gray-600 leading-relaxed">
-La arquitectura computacional estudia cómo evolucionaron las computadoras,
-cómo se integran sus componentes, cuáles son los principios lógicos que permiten
-procesar información y cómo la CPU coordina todo el funcionamiento del sistema.
+La memoria es el componente encargado de almacenar datos e instrucciones para que el procesador pueda ejecutarlas de forma rápida y eficiente. Su organización determina gran parte del rendimiento, estabilidad y velocidad de cualquier sistema computacional.
 </p>
 
 </div>
 
 <!-- RELACIÓN GENERAL -->
 
-<div class="card bg-indigo-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-indigo-700 mb-6">
-🔗 Relación entre los conceptos
-</h2>
-
-<div class="grid md:grid-cols-4 gap-6 text-center">
-
-<div class="bg-white p-5 rounded-xl border">
-📜<br>
-<strong>Historia</strong><br>
-<small>Evolución tecnológica</small>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-🧩<br>
-<strong>Componentes</strong><br>
-<small>Trabajo coordinado</small>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-⚡<br>
-<strong>Lógica Digital</strong><br>
-<small>Procesamiento binario</small>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-🧠<br>
-<strong>CPU</strong><br>
-<small>Centro de control</small>
-</div>
-
-</div>
-
-</div>
-
-<!-- HISTORIA -->
-
 <div class="card bg-blue-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-blue-700 mb-6">
-📜 Evolución de la Computadora
+🔄 Flujo del procesamiento de información
 </h2>
 
-<div class="grid md:grid-cols-5 gap-4">
+<div class="grid md:grid-cols-5 gap-5 text-center">
 
-<div class="bg-white p-4 rounded-xl border text-center">
-🧮
-<h3 class="font-semibold">Ábaco</h3>
-<p class="text-sm">Primeras herramientas de cálculo.</p>
+<div class="bg-white rounded-xl border p-5">
+💾
+<h3 class="font-semibold mt-2">Memoria</h3>
+<p class="text-sm">Almacena información.</p>
 </div>
 
-<div class="bg-white p-4 rounded-xl border text-center">
-⚙️
-<h3 class="font-semibold">Pascal</h3>
-<p class="text-sm">Calculadoras mecánicas.</p>
-</div>
-
-<div class="bg-white p-4 rounded-xl border text-center">
+<div class="bg-white rounded-xl border p-5">
 📚
-<h3 class="font-semibold">Babbage</h3>
-<p class="text-sm">Máquina programable.</p>
+<h3 class="font-semibold mt-2">Jerarquía</h3>
+<p class="text-sm">Organiza velocidad y capacidad.</p>
 </div>
 
-<div class="bg-white p-4 rounded-xl border text-center">
-💡
-<h3 class="font-semibold">Electrónicas</h3>
-<p class="text-sm">Primeras computadoras modernas.</p>
+<div class="bg-white rounded-xl border p-5">
+⚙️
+<h3 class="font-semibold mt-2">CPU</h3>
+<p class="text-sm">Solicita y procesa datos.</p>
 </div>
 
-<div class="bg-white p-4 rounded-xl border text-center">
-🚀
-<h3 class="font-semibold">Microprocesadores</h3>
-<p class="text-sm">Base de los equipos actuales.</p>
+<div class="bg-white rounded-xl border p-5">
+🔀
+<h3 class="font-semibold mt-2">Buses</h3>
+<p class="text-sm">Transportan información.</p>
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+💻
+<h3 class="font-semibold mt-2">Software</h3>
+<p class="text-sm">Ejecuta programas.</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- COMPONENTES -->
+<!-- JERARQUÍA -->
 
 <div class="card bg-green-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-green-700 mb-6">
-🧩 Componentes de una Computadora
-</h2>
-
-<div class="grid md:grid-cols-5 gap-6">
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">⌨️ Entrada</h3>
-<p class="text-sm">Capturan información del usuario.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🧠 CPU</h3>
-<p class="text-sm">Procesa y coordina operaciones.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">📚 Memoria</h3>
-<p class="text-sm">Almacena datos temporales.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">💾 Almacenamiento</h3>
-<p class="text-sm">Conserva información permanentemente.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🖥️ Salida</h3>
-<p class="text-sm">Presentan resultados al usuario.</p>
-</div>
-
-</div>
-
-<p class="mt-6 text-gray-600">
-El rendimiento global depende de la interacción eficiente entre todos los componentes.
-</p>
-
-</div>
-
-<!-- LOGICA DIGITAL -->
-
-<div class="card bg-purple-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-purple-700 mb-6">
-⚡ Lógica Matemática y Álgebra de Boole
+📚 Jerarquía de Memoria
 </h2>
 
 <div class="grid md:grid-cols-4 gap-6">
 
-<div class="bg-white p-5 rounded-xl border text-center">
-0 / 1
-<h3 class="font-semibold mt-2">Sistema Binario</h3>
-<p class="text-sm">Base del hardware digital.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">📝 Registros</h3>
+<p class="text-sm">
+Máxima velocidad y acceso inmediato por parte del CPU.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border text-center">
-AND
-<h3 class="font-semibold mt-2">Conjunción</h3>
-<p class="text-sm">Todas las condiciones deben cumplirse.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">⚡ Caché</h3>
+<p class="text-sm">
+Reduce tiempos de acceso almacenando datos frecuentes.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border text-center">
-OR
-<h3 class="font-semibold mt-2">Disyunción</h3>
-<p class="text-sm">Basta una condición verdadera.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">🧠 RAM</h3>
+<p class="text-sm">
+Contiene programas y datos durante la ejecución.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border text-center">
-NOT
-<h3 class="font-semibold mt-2">Negación</h3>
-<p class="text-sm">Invierte el valor lógico.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">💽 Almacenamiento</h3>
+<p class="text-sm">
+Conserva información permanentemente (SSD/HDD).
+</p>
 </div>
 
 </div>
 
 <p class="mt-6 text-gray-600">
-Las compuertas lógicas construidas con estas operaciones permiten que los circuitos
-electrónicos tomen decisiones y procesen información.
+La jerarquía equilibra velocidad, capacidad y costo para optimizar el rendimiento del sistema.
 </p>
+
+</div>
+
+<!-- FACTORES -->
+
+<div class="card bg-yellow-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-yellow-700 mb-6">
+⚖ Factores que influyen en el rendimiento
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<div class="bg-white rounded-xl border p-5">
+⏱
+<h3 class="font-semibold">Tiempo de acceso</h3>
+<p class="text-sm">
+Tiempo necesario para localizar un dato.
+</p>
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+🔄
+<h3 class="font-semibold">Ciclo de memoria</h3>
+<p class="text-sm">
+Tiempo requerido para completar una operación.
+</p>
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+🔋
+<h3 class="font-semibold">Volatilidad</h3>
+<p class="text-sm">
+Determina si conserva información sin energía.
+</p>
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+📍
+<h3 class="font-semibold">Direccionamiento</h3>
+<p class="text-sm">
+Permite localizar cada dato almacenado.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- CLASIFICACIÓN -->
+
+<div class="card bg-purple-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-purple-700 mb-6">
+🗂 Clasificación de las Memorias
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">Tecnología</h3>
+
+<ul class="text-sm mt-2 space-y-1">
+<li>• RAM</li>
+<li>• ROM</li>
+<li>• Flash</li>
+</ul>
+
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+
+<h3 class="font-semibold">
+Método de acceso
+</h3>
+
+<ul class="text-sm mt-2 space-y-1">
+<li>• Acceso directo</li>
+<li>• Secuencial</li>
+<li>• Asociativo</li>
+</ul>
+
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+
+<h3 class="font-semibold">
+Ubicación
+</h3>
+
+<ul class="text-sm mt-2 space-y-1">
+<li>• Registros</li>
+<li>• Caché</li>
+<li>• RAM</li>
+<li>• Almacenamiento</li>
+</ul>
+
+</div>
+
+</div>
 
 </div>
 
@@ -242,80 +262,106 @@ electrónicos tomen decisiones y procesen información.
 <div class="card bg-red-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-red-700 mb-6">
-🧠 Arquitectura Interna de la CPU
+🔀 Comunicación entre CPU y Memoria
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">
+📍 Bus de Direcciones
+</h3>
+
+<p class="text-sm">
+Indica dónde se encuentra la información.
+</p>
+
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+
+<h3 class="font-semibold">
+📦 Bus de Datos
+</h3>
+
+<p class="text-sm">
+Transporta información entre CPU y memoria.
+</p>
+
+</div>
+
+<div class="bg-white rounded-xl border p-5">
+
+<h3 class="font-semibold">
+🎛 Bus de Control
+</h3>
+
+<p class="text-sm">
+Coordina todas las operaciones de lectura y escritura.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ENSAMBLADOR -->
+
+<div class="card bg-indigo-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-indigo-700 mb-6">
+💻 Lenguaje Ensamblador
 </h2>
 
 <div class="grid md:grid-cols-4 gap-6">
 
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🎼 Unidad de Control</h3>
-<p class="text-sm">Coordina y dirige las instrucciones.</p>
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">MOV</h3>
+<p class="text-sm">
+Transfiere datos entre memoria y registros.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">➕ ALU</h3>
-<p class="text-sm">Realiza cálculos y operaciones lógicas.</p>
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">LOAD / STORE</h3>
+<p class="text-sm">
+Lee y escribe datos en memoria.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">📦 Registros</h3>
-<p class="text-sm">Guardan datos temporales de alta velocidad.</p>
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">PUSH</h3>
+<p class="text-sm">
+Guarda información en la pila.
+</p>
 </div>
 
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">⚡ Caché</h3>
-<p class="text-sm">Reduce tiempos de acceso a información frecuente.</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- CICLO -->
-
-<div class="card bg-yellow-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-yellow-700 mb-6">
-🔄 Ciclo Básico de Ejecución
-</h2>
-
-<div class="grid md:grid-cols-3 gap-6 text-center">
-
-<div class="bg-white p-5 rounded-xl border">
-1️⃣
-<h3 class="font-semibold">Obtener</h3>
-<p class="text-sm">La CPU lee una instrucción desde memoria.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-2️⃣
-<h3 class="font-semibold">Interpretar</h3>
-<p class="text-sm">Determina la acción requerida.</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-3️⃣
-<h3 class="font-semibold">Ejecutar</h3>
-<p class="text-sm">Realiza la operación solicitada.</p>
+<div class="bg-white rounded-xl border p-5">
+<h3 class="font-semibold">POP</h3>
+<p class="text-sm">
+Recupera información desde la pila.
+</p>
 </div>
 
 </div>
 
+<p class="mt-6 text-gray-600">
+Estas instrucciones muestran cómo el procesador mueve continuamente información entre registros y memoria durante la ejecución de un programa.
+</p>
+
 </div>
 
-<!-- IMPORTANCIA -->
+<!-- CONCLUSIÓN -->
 
 <div class="card bg-slate-100 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-slate-700 mb-4">
-🎓 Importancia para Ingeniería en Software
+🎓 Importancia para la Ingeniería en Software
 </h2>
 
 <p class="text-gray-600 leading-relaxed">
-Comprender la historia de la computación, la función de los componentes,
-la lógica digital y la arquitectura de la CPU permite desarrollar software
-más eficiente, optimizar recursos y diseñar soluciones alineadas con las
-capacidades reales del hardware moderno.
+Comprender la organización de la memoria permite desarrollar software más eficiente, optimizar el uso de recursos, reducir tiempos de acceso y entender cómo interactúan el hardware y el lenguaje ensamblador durante la ejecución de cualquier aplicación.
 </p>
 
 </div>
@@ -325,7 +371,7 @@ capacidades reales del hardware moderno.
 <!-- FOOTER -->
 
 <div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
-Infografía educativa sobre Organización y Arquitectura Computacional
+Infografía educativa • Organización y Arquitectura Computacional • Memoria y Procesamiento de la Información
 </div>
 
 </div>
