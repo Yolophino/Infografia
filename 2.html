@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Infografía - Sistemas de Comunicación y Conectividad Global</title>
+<title>Infografía - Capa de Transporte</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -25,7 +25,7 @@ transition:all .3s ease;
 
 .card:hover{
 transform:translateY(-6px) scale(1.03);
-box-shadow:0 15px 30px rgba(0,0,0,0.15);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 </style>
@@ -38,14 +38,14 @@ box-shadow:0 15px 30px rgba(0,0,0,0.15);
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-blue-700 via-cyan-600 to-teal-600 text-white p-10 text-center">
+<div class="bg-gradient-to-r from-sky-600 via-blue-700 to-indigo-700 text-white p-10 text-center">
 
 <h1 class="text-4xl font-extrabold mb-4">
-🌐 Sistemas de Comunicación
+🚚 Capa de Transporte
 </h1>
 
-<p class="text-lg text-cyan-100">
-Arquitectura, protocolos y mecanismos que hacen posible la conectividad global
+<p class="text-lg text-blue-100">
+El enlace entre las aplicaciones y la red que garantiza una comunicación eficiente y confiable
 </p>
 
 </div>
@@ -57,119 +57,78 @@ Arquitectura, protocolos y mecanismos que hacen posible la conectividad global
 <div class="card bg-white p-8 rounded-2xl shadow border">
 
 <h2 class="text-2xl font-bold text-blue-700 mb-3">
-📡 ¿Qué son los sistemas de comunicación?
+📡 ¿Qué hace la capa de transporte?
 </h2>
 
 <p class="text-gray-600 leading-relaxed">
-Son el conjunto de tecnologías, dispositivos, protocolos y estructuras
-organizadas que permiten el intercambio de información entre personas,
-organizaciones y sistemas ubicados en cualquier parte del mundo.
-Su objetivo es garantizar comunicaciones rápidas, seguras, escalables
-y confiables.
+La capa de transporte coordina la comunicación entre las aplicaciones que se ejecutan en dispositivos conectados. Organiza el flujo de datos, identifica a qué aplicación pertenece cada información y determina el nivel de confiabilidad necesario según el servicio que se esté utilizando.
 </p>
 
 </div>
 
-<!-- FUNDAMENTOS -->
+<!-- FUNCIONES -->
 
-<div class="card bg-cyan-50 p-8 rounded-2xl border">
+<div class="card bg-sky-50 p-8 rounded-2xl border">
 
-<h2 class="text-2xl font-bold text-cyan-700 mb-6">
-🏛️ Fundamentos del entorno conectado
+<h2 class="text-2xl font-bold text-sky-700 mb-6">
+⚙️ Funciones principales
 </h2>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🔄 Comunicación en la Red</h3>
-<p class="text-sm">
-Permite intercambiar información entre usuarios, dispositivos y sistemas
-sin importar la distancia geográfica.
-</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">☁️ Red como Plataforma</h3>
-<p class="text-sm">
-Internet se convierte en el entorno donde operan aplicaciones,
-servicios empresariales y soluciones en la nube.
-</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- ARQUITECTURA -->
-
-<div class="card bg-indigo-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-indigo-700 mb-6">
-🏗️ Estructura y modelado
-</h2>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🌍 Arquitectura de Internet</h3>
-<p class="text-sm">
-Conjunto de redes interconectadas que cooperan para permitir la
-comunicación global.
-</p>
-</div>
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">📡 Plataforma para las Comunicaciones</h3>
-<p class="text-sm">
-Integra dispositivos, medios de transmisión y protocolos bajo
-reglas comunes de comunicación.
-</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- CAPAS -->
-
-<div class="card bg-purple-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-purple-700 mb-6">
-🧩 Abstracción e interoperabilidad
-</h2>
-
-<p class="mb-6 text-gray-600">
-Los modelos OSI y TCP/IP organizan las funciones de red en capas,
-permitiendo modularidad, mantenimiento y compatibilidad tecnológica.
-</p>
 
 <div class="grid md:grid-cols-4 gap-6">
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">Separación</h3>
+<h3 class="font-semibold">Puertos y Sockets</h3>
 <p class="text-sm">
-Cada capa tiene responsabilidades específicas.
+Identifican la aplicación correcta que debe recibir los datos.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">Abstracción</h3>
+<h3 class="font-semibold">Multiplexación</h3>
 <p class="text-sm">
-Oculta la complejidad de niveles inferiores.
+Reúne datos de varias aplicaciones para compartir un mismo canal.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">Interoperabilidad</h3>
+<h3 class="font-semibold">Demultiplexación</h3>
 <p class="text-sm">
-Permite compatibilidad entre fabricantes y tecnologías.
+Entrega cada segmento a la aplicación correspondiente.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">Escalabilidad</h3>
+<h3 class="font-semibold">Segmentación</h3>
 <p class="text-sm">
-Facilita la evolución constante de Internet.
+Divide grandes cantidades de información en segmentos más pequeños.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Encapsulamiento</h3>
+<p class="text-sm">
+Agrega información de control antes de transmitir los datos.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Control de errores</h3>
+<p class="text-sm">
+Facilita recuperar únicamente los segmentos perdidos.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Comunicación simultánea</h3>
+<p class="text-sm">
+Permite que varias aplicaciones utilicen la misma conexión.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Entrega ordenada</h3>
+<p class="text-sm">
+Garantiza que cada aplicación reciba únicamente su información.
 </p>
 </div>
 
@@ -177,29 +136,60 @@ Facilita la evolución constante de Internet.
 
 </div>
 
-<!-- DIRECCIONAMIENTO -->
+<!-- TCP -->
 
 <div class="card bg-green-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-green-700 mb-6">
-📍 Localización y transporte de datos
+🛡️ TCP (Transmission Control Protocol)
 </h2>
 
-<div class="grid md:grid-cols-2 gap-6">
+<p class="mb-6 text-gray-600">
+Prioriza la confiabilidad para asegurar que la información llegue completa,
+sin errores y respetando el orden original de transmisión.
+</p>
+
+<div class="grid md:grid-cols-3 gap-6">
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">📮 Direccionamiento de Red</h3>
+<h3 class="font-semibold">ACK</h3>
 <p class="text-sm">
-Identifica de manera única cada dispositivo para localizar
-correctamente el destino de los datos.
+Confirma la recepción correcta de los segmentos.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🛣️ Protocolos de Capa de Red</h3>
+<h3 class="font-semibold">Retransmisión</h3>
 <p class="text-sm">
-Determinan las rutas y mecanismos necesarios para transportar
-la información entre redes distintas.
+Reenvía datos cuando detecta pérdidas.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Control de Flujo</h3>
+<p class="text-sm">
+Utiliza la ventana deslizante para evitar saturar al receptor.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Control de Congestión</h3>
+<p class="text-sm">
+Regula el tráfico para mantener estable la red.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Entrega Ordenada</h3>
+<p class="text-sm">
+Reconstruye correctamente la secuencia original.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Aplicaciones</h3>
+<p class="text-sm">
+Web, banca, correo electrónico y transferencia de archivos.
 </p>
 </div>
 
@@ -207,41 +197,60 @@ la información entre redes distintas.
 
 </div>
 
-<!-- PROTOCOLOS -->
+<!-- UDP -->
 
 <div class="card bg-orange-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-orange-700 mb-6">
-⚙️ Protocolos esenciales
+⚡ UDP (User Datagram Protocol)
 </h2>
 
-<div class="grid md:grid-cols-4 gap-6">
+<p class="mb-6 text-gray-600">
+Reduce los mecanismos de control para ofrecer transmisiones más rápidas,
+priorizando la velocidad sobre la confiabilidad.
+</p>
+
+<div class="grid md:grid-cols-3 gap-6">
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">IP</h3>
+<h3 class="font-semibold">Sin conexión</h3>
 <p class="text-sm">
-Direcciona y enruta los paquetes de datos.
+No establece sesiones antes de transmitir.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">TCP</h3>
+<h3 class="font-semibold">Sin ACK</h3>
 <p class="text-sm">
-Garantiza una transmisión confiable.
+No espera confirmaciones de recepción.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">UDP</h3>
+<h3 class="font-semibold">Mayor velocidad</h3>
 <p class="text-sm">
-Prioriza velocidad y baja latencia.
+Reduce la latencia durante la comunicación.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">DNS</h3>
+<h3 class="font-semibold">Streaming</h3>
 <p class="text-sm">
-Traduce nombres de dominio en direcciones de red.
+Ideal para video y audio en tiempo real.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Videollamadas</h3>
+<p class="text-sm">
+Prefiere continuidad antes que retransmitir paquetes.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Videojuegos</h3>
+<p class="text-sm">
+Minimiza retrasos durante la interacción.
 </p>
 </div>
 
@@ -249,71 +258,156 @@ Traduce nombres de dominio en direcciones de red.
 
 </div>
 
-<!-- MAPA JERÁRQUICO -->
+<!-- SESIONES -->
+
+<div class="card bg-purple-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-purple-700 mb-6">
+🤝 Administración de Sesiones
+</h2>
+
+<div class="grid md:grid-cols-5 gap-5">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Three-Way Handshake</h3>
+<p class="text-sm">
+Establece la conexión entre los dispositivos.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Estados TCP</h3>
+<p class="text-sm">
+Administran el ciclo de vida de la conexión.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Terminación</h3>
+<p class="text-sm">
+Finaliza la sesión de forma controlada.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Timers</h3>
+<p class="text-sm">
+Detectan retrasos y activan recuperaciones.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Supervisión</h3>
+<p class="text-sm">
+Garantiza estabilidad durante toda la comunicación.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- COMPARACIÓN -->
+
+<div class="card bg-indigo-50 p-8 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-indigo-700 mb-8">
+⚖️ TCP vs UDP
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<div class="bg-white p-6 rounded-xl border">
+
+<h3 class="text-xl font-bold text-green-700 mb-4">
+🛡️ TCP
+</h3>
+
+<ul class="list-disc ml-5 text-sm space-y-2">
+<li>Orientado a conexión.</li>
+<li>Alta confiabilidad.</li>
+<li>Control de errores.</li>
+<li>Control de flujo y congestión.</li>
+<li>Mayor precisión.</li>
+</ul>
+
+</div>
+
+<div class="bg-white p-6 rounded-xl border">
+
+<h3 class="text-xl font-bold text-orange-700 mb-4">
+⚡ UDP
+</h3>
+
+<ul class="list-disc ml-5 text-sm space-y-2">
+<li>Sin conexión.</li>
+<li>Mayor velocidad.</li>
+<li>Sin retransmisiones.</li>
+<li>Baja latencia.</li>
+<li>Ideal para tiempo real.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MAPA -->
 
 <div class="card bg-yellow-50 p-8 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-yellow-700 mb-8">
-🔗 Relación jerárquica de los conceptos
+🔗 Relación entre los conceptos
 </h2>
 
 <div class="flex flex-col items-center gap-8">
 
-<div class="bg-white p-5 rounded-xl border w-full md:w-3/4 text-center">
+<div class="bg-white border rounded-xl p-5 w-full md:w-2/3 text-center">
 <h3 class="font-bold text-blue-700">
-🌐 Sistemas de Comunicación
-</h3>
-</div>
-
-<div class="text-4xl">⬇️</div>
-
-<div class="grid md:grid-cols-2 gap-6 w-full">
-
-<div class="bg-white p-5 rounded-xl border text-center">
-🏛️ Fundamentos del Entorno Conectado
-</div>
-
-<div class="bg-white p-5 rounded-xl border text-center">
-🏗️ Arquitectura de Internet
-</div>
-
-</div>
-
-<div class="text-4xl">⬇️</div>
-
-<div class="bg-white p-5 rounded-xl border w-full md:w-2/3 text-center">
-🧩 Uso de Capas (OSI y TCP/IP)
-</div>
-
-<div class="text-4xl">⬇️</div>
-
-<div class="grid md:grid-cols-2 gap-6 w-full">
-
-<div class="bg-white p-5 rounded-xl border text-center">
-📍 Direccionamiento de Red
-</div>
-
-<div class="bg-white p-5 rounded-xl border text-center">
-🛣️ Protocolos de Capa de Red
-</div>
-
-</div>
-
-<div class="text-4xl">⬇️</div>
-
-<div class="bg-white p-5 rounded-xl border w-full md:w-3/4 text-center">
-⚙️ Protocolos Especializados (IP, TCP, UDP, DNS)
-</div>
-
-<div class="text-4xl">⬇️</div>
-
-<div class="bg-gradient-to-r from-green-500 to-cyan-500 text-white p-6 rounded-xl w-full md:w-3/4 text-center">
-<h3 class="font-bold text-xl">
-🌍 Conectividad Global
+🚚 Capa de Transporte
 </h3>
 <p class="text-sm mt-2">
-Comunicación segura, eficiente y confiable entre miles de millones de dispositivos.
+Coordina la comunicación entre aplicaciones.
 </p>
+</div>
+
+<div class="text-4xl">⬇️</div>
+
+<div class="grid md:grid-cols-3 gap-6 w-full">
+
+<div class="bg-white border rounded-xl p-5 text-center">
+⚙️ Funciones
+</div>
+
+<div class="bg-white border rounded-xl p-5 text-center">
+🛡️ TCP
+</div>
+
+<div class="bg-white border rounded-xl p-5 text-center">
+⚡ UDP
+</div>
+
+</div>
+
+<div class="text-4xl">⬇️</div>
+
+<div class="bg-white border rounded-xl p-5 w-full md:w-2/3 text-center">
+🤝 Administración de Sesiones
+</div>
+
+<div class="text-4xl">⬇️</div>
+
+<div class="bg-gradient-to-r from-sky-600 to-indigo-700 text-white p-6 rounded-xl w-full md:w-2/3 text-center">
+
+<h3 class="text-xl font-bold">
+🌍 Comunicación confiable entre aplicaciones
+</h3>
+
+<p class="text-sm mt-2">
+Entrega correcta de la información según las necesidades de cada servicio digital.
+</p>
+
 </div>
 
 </div>
@@ -329,11 +423,7 @@ Comunicación segura, eficiente y confiable entre miles de millones de dispositi
 </h2>
 
 <p class="text-gray-700 leading-relaxed">
-La conectividad moderna es posible gracias a la integración de múltiples
-componentes especializados. La comunicación en red, la arquitectura de
-Internet, los modelos por capas, el direccionamiento y los protocolos
-trabajan coordinadamente para garantizar que la información pueda viajar
-de forma eficiente entre millones de dispositivos alrededor del mundo.
+La capa de transporte permite que múltiples aplicaciones compartan una misma conexión de red de manera organizada. TCP proporciona confiabilidad mediante control de errores y sesiones, mientras que UDP ofrece rapidez para aplicaciones en tiempo real. Ambos protocolos responden a necesidades diferentes y son esenciales para el funcionamiento de Internet.
 </p>
 
 </div>
@@ -343,7 +433,7 @@ de forma eficiente entre millones de dispositivos alrededor del mundo.
 <!-- FOOTER -->
 
 <div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
-Infografía educativa sobre Sistemas de Comunicación, Arquitectura de Internet y Conectividad Global
+Infografía educativa sobre la Capa de Transporte, TCP, UDP y Administración de Sesiones
 </div>
 
 </div>
