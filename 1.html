@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Infografía - Memoria en la Arquitectura Computacional</title>
+<title>Infografía - Capa de Transporte</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,6 +17,13 @@
 body{
 font-family:'Poppins',sans-serif;
 background:#f1f5f9;
+margin:0;
+padding:0;
+}
+@media print{
+@page{size:A4;margin:8mm;}
+body{background:#fff;}
+.card{break-inside:avoid;page-break-inside:avoid;}
 }
 
 .card{
@@ -35,167 +41,223 @@ box-shadow:0 15px 30px rgba(0,0,0,.15);
 
 <body class="text-gray-800">
 
-<div class="max-w-7xl mx-auto my-10 bg-white rounded-3xl shadow-2xl overflow-hidden">
+<div class="max-w-[98%] mx-auto my-2 bg-white  overflow-hidden">
 
 <!-- HEADER -->
 
-<div class="bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-800 text-white p-10 text-center">
+<div class="bg-gradient-to-r from-sky-600 via-blue-700 to-indigo-700 text-white p-6 text-center">
 
 <h1 class="text-4xl font-extrabold mb-4">
-🧠 Organización y Arquitectura Computacional
+ Capa de Transporte
 </h1>
 
-<p class="text-lg text-cyan-100">
-La memoria como elemento esencial del procesamiento de la información
+<p class="text-lg text-blue-100">
+El enlace entre las aplicaciones y la red que garantiza una comunicación eficiente y confiable
 </p>
 
 </div>
 
-<div class="p-10 bg-gray-50 space-y-12">
+<div class="p-6 bg-gray-50 space-y-6">
 
-<!-- INTRODUCCIÓN -->
+<!-- DEFINICIÓN -->
 
-<div class="card bg-white p-8 rounded-2xl shadow border">
+<div class="card bg-white p-6 rounded-2xl shadow border">
 
 <h2 class="text-2xl font-bold text-blue-700 mb-3">
-🎯 ¿Por qué es importante la memoria?
+ ¿Qué hace la capa de transporte?
 </h2>
 
 <p class="text-gray-600 leading-relaxed">
-La memoria es el componente encargado de almacenar datos e instrucciones para que el procesador pueda ejecutarlas de forma rápida y eficiente. Su organización determina gran parte del rendimiento, estabilidad y velocidad de cualquier sistema computacional.
+La capa de transporte coordina la comunicación entre las aplicaciones que se ejecutan en dispositivos conectados. Organiza el flujo de datos, identifica a qué aplicación pertenece cada información y determina el nivel de confiabilidad necesario según el servicio que se esté utilizando.
 </p>
 
 </div>
 
-<!-- RELACIÓN GENERAL -->
+<!-- FUNCIONES -->
 
-<div class="card bg-blue-50 p-8 rounded-2xl border">
+<div class="card bg-sky-50 p-6 rounded-2xl border">
 
-<h2 class="text-2xl font-bold text-blue-700 mb-6">
-🔄 Flujo del procesamiento de información
+<h2 class="text-2xl font-bold text-sky-700 mb-6">
+ Funciones principales
 </h2>
 
-<div class="grid md:grid-cols-5 gap-5 text-center">
+<div class="grid md:grid-cols-4 gap-6">
 
-<div class="bg-white rounded-xl border p-5">
-💾
-<h3 class="font-semibold mt-2">Memoria</h3>
-<p class="text-sm">Almacena información.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Puertos y Sockets</h3>
+<p class="text-sm">
+Identifican la aplicación correcta que debe recibir los datos.
+</p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-📚
-<h3 class="font-semibold mt-2">Jerarquía</h3>
-<p class="text-sm">Organiza velocidad y capacidad.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Multiplexación</h3>
+<p class="text-sm">
+Reúne datos de varias aplicaciones para compartir un mismo canal.
+</p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-⚙️
-<h3 class="font-semibold mt-2">CPU</h3>
-<p class="text-sm">Solicita y procesa datos.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Demultiplexación</h3>
+<p class="text-sm">
+Entrega cada segmento a la aplicación correspondiente.
+</p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-🔀
-<h3 class="font-semibold mt-2">Buses</h3>
-<p class="text-sm">Transportan información.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Segmentación</h3>
+<p class="text-sm">
+Divide grandes cantidades de información en segmentos más pequeños.
+</p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-💻
-<h3 class="font-semibold mt-2">Software</h3>
-<p class="text-sm">Ejecuta programas.</p>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Encapsulamiento</h3>
+<p class="text-sm">
+Agrega información de control antes de transmitir los datos.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Control de errores</h3>
+<p class="text-sm">
+Facilita recuperar únicamente los segmentos perdidos.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Comunicación simultánea</h3>
+<p class="text-sm">
+Permite que varias aplicaciones utilicen la misma conexión.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Entrega ordenada</h3>
+<p class="text-sm">
+Garantiza que cada aplicación reciba únicamente su información.
+</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- JERARQUÍA -->
+<!-- TCP -->
 
-<div class="card bg-green-50 p-8 rounded-2xl border">
+<div class="card bg-green-50 p-6 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-green-700 mb-6">
-📚 Jerarquía de Memoria
+ TCP (Transmission Control Protocol)
 </h2>
 
-<div class="grid md:grid-cols-4 gap-6">
-
-<div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">📝 Registros</h3>
-<p class="text-sm">
-Máxima velocidad y acceso inmediato por parte del CPU.
+<p class="mb-6 text-gray-600">
+Prioriza la confiabilidad para asegurar que la información llegue completa,
+sin errores y respetando el orden original de transmisión.
 </p>
-</div>
+
+<div class="grid md:grid-cols-3 gap-6">
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">⚡ Caché</h3>
+<h3 class="font-semibold">ACK</h3>
 <p class="text-sm">
-Reduce tiempos de acceso almacenando datos frecuentes.
+Confirma la recepción correcta de los segmentos.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">🧠 RAM</h3>
+<h3 class="font-semibold">Retransmisión</h3>
 <p class="text-sm">
-Contiene programas y datos durante la ejecución.
+Reenvía datos cuando detecta pérdidas.
 </p>
 </div>
 
 <div class="bg-white p-5 rounded-xl border">
-<h3 class="font-semibold">💽 Almacenamiento</h3>
+<h3 class="font-semibold">Control de Flujo</h3>
 <p class="text-sm">
-Conserva información permanentemente (SSD/HDD).
+Utiliza la ventana deslizante para evitar saturar al receptor.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Control de Congestión</h3>
+<p class="text-sm">
+Regula el tráfico para mantener estable la red.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Entrega Ordenada</h3>
+<p class="text-sm">
+Reconstruye correctamente la secuencia original.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Aplicaciones</h3>
+<p class="text-sm">
+Web, banca, correo electrónico y transferencia de archivos.
 </p>
 </div>
 
 </div>
 
-<p class="mt-6 text-gray-600">
-La jerarquía equilibra velocidad, capacidad y costo para optimizar el rendimiento del sistema.
-</p>
-
 </div>
 
-<!-- FACTORES -->
+<!-- UDP -->
 
-<div class="card bg-yellow-50 p-8 rounded-2xl border">
+<div class="card bg-orange-50 p-6 rounded-2xl border">
 
-<h2 class="text-2xl font-bold text-yellow-700 mb-6">
-⚖ Factores que influyen en el rendimiento
+<h2 class="text-2xl font-bold text-orange-700 mb-6">
+ UDP (User Datagram Protocol)
 </h2>
 
-<div class="grid md:grid-cols-4 gap-6">
+<p class="mb-6 text-gray-600">
+Reduce los mecanismos de control para ofrecer transmisiones más rápidas,
+priorizando la velocidad sobre la confiabilidad.
+</p>
 
-<div class="bg-white rounded-xl border p-5">
-⏱
-<h3 class="font-semibold">Tiempo de acceso</h3>
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Sin conexión</h3>
 <p class="text-sm">
-Tiempo necesario para localizar un dato.
+No establece sesiones antes de transmitir.
 </p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-🔄
-<h3 class="font-semibold">Ciclo de memoria</h3>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Sin ACK</h3>
 <p class="text-sm">
-Tiempo requerido para completar una operación.
+No espera confirmaciones de recepción.
 </p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-🔋
-<h3 class="font-semibold">Volatilidad</h3>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Mayor velocidad</h3>
 <p class="text-sm">
-Determina si conserva información sin energía.
+Reduce la latencia durante la comunicación.
 </p>
 </div>
 
-<div class="bg-white rounded-xl border p-5">
-📍
-<h3 class="font-semibold">Direccionamiento</h3>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Streaming</h3>
 <p class="text-sm">
-Permite localizar cada dato almacenado.
+Ideal para video y audio en tiempo real.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Videollamadas</h3>
+<p class="text-sm">
+Prefiere continuidad antes que retransmitir paquetes.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Videojuegos</h3>
+<p class="text-sm">
+Minimiza retrasos durante la interacción.
 </p>
 </div>
 
@@ -203,52 +265,93 @@ Permite localizar cada dato almacenado.
 
 </div>
 
-<!-- CLASIFICACIÓN -->
+<!-- SESIONES -->
 
-<div class="card bg-purple-50 p-8 rounded-2xl border">
+<div class="card bg-purple-50 p-6 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-purple-700 mb-6">
-🗂 Clasificación de las Memorias
+ Administración de Sesiones
 </h2>
 
-<div class="grid md:grid-cols-3 gap-6">
+<div class="grid md:grid-cols-5 gap-5">
 
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">Tecnología</h3>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Three-Way Handshake</h3>
+<p class="text-sm">
+Establece la conexión entre los dispositivos.
+</p>
+</div>
 
-<ul class="text-sm mt-2 space-y-1">
-<li>• RAM</li>
-<li>• ROM</li>
-<li>• Flash</li>
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Estados TCP</h3>
+<p class="text-sm">
+Administran el ciclo de vida de la conexión.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Terminación</h3>
+<p class="text-sm">
+Finaliza la sesión de forma controlada.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Timers</h3>
+<p class="text-sm">
+Detectan retrasos y activan recuperaciones.
+</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl border">
+<h3 class="font-semibold">Supervisión</h3>
+<p class="text-sm">
+Garantiza estabilidad durante toda la comunicación.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- COMPARACIÓN -->
+
+<div class="card bg-indigo-50 p-6 rounded-2xl border">
+
+<h2 class="text-2xl font-bold text-indigo-700 mb-8">
+ TCP vs UDP
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="bg-white p-6 rounded-xl border">
+
+<h3 class="text-xl font-bold text-green-700 mb-4">
+ TCP
+</h3>
+
+<ul class="list-disc ml-5 text-sm space-y-2">
+<li>Orientado a conexión.</li>
+<li>Alta confiabilidad.</li>
+<li>Control de errores.</li>
+<li>Control de flujo y congestión.</li>
+<li>Mayor precisión.</li>
 </ul>
 
 </div>
 
-<div class="bg-white rounded-xl border p-5">
+<div class="bg-white p-6 rounded-xl border">
 
-<h3 class="font-semibold">
-Método de acceso
+<h3 class="text-xl font-bold text-orange-700 mb-4">
+ UDP
 </h3>
 
-<ul class="text-sm mt-2 space-y-1">
-<li>• Acceso directo</li>
-<li>• Secuencial</li>
-<li>• Asociativo</li>
-</ul>
-
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-
-<h3 class="font-semibold">
-Ubicación
-</h3>
-
-<ul class="text-sm mt-2 space-y-1">
-<li>• Registros</li>
-<li>• Caché</li>
-<li>• RAM</li>
-<li>• Almacenamiento</li>
+<ul class="list-disc ml-5 text-sm space-y-2">
+<li>Sin conexión.</li>
+<li>Mayor velocidad.</li>
+<li>Sin retransmisiones.</li>
+<li>Baja latencia.</li>
+<li>Ideal para tiempo real.</li>
 </ul>
 
 </div>
@@ -257,111 +360,77 @@ Ubicación
 
 </div>
 
-<!-- CPU -->
+<!-- MAPA -->
 
-<div class="card bg-red-50 p-8 rounded-2xl border">
+<div class="card bg-yellow-50 p-6 rounded-2xl border">
 
-<h2 class="text-2xl font-bold text-red-700 mb-6">
-🔀 Comunicación entre CPU y Memoria
+<h2 class="text-2xl font-bold text-yellow-700 mb-8">
+ Relación entre los conceptos
 </h2>
 
-<div class="grid md:grid-cols-3 gap-6">
+<div class="flex flex-col items-center gap-6">
 
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">
-📍 Bus de Direcciones
+<div class="bg-white border rounded-xl p-5 w-full md:w-2/3 text-center">
+<h3 class="font-bold text-blue-700">
+ Capa de Transporte
+</h3>
+<p class="text-sm mt-2">
+Coordina la comunicación entre aplicaciones.
+</p>
+</div>
+
+<div class="text-4xl"></div>
+
+<div class="grid md:grid-cols-3 gap-6 w-full">
+
+<div class="bg-white border rounded-xl p-5 text-center">
+ Funciones
+</div>
+
+<div class="bg-white border rounded-xl p-5 text-center">
+ TCP
+</div>
+
+<div class="bg-white border rounded-xl p-5 text-center">
+ UDP
+</div>
+
+</div>
+
+<div class="text-4xl"></div>
+
+<div class="bg-white border rounded-xl p-5 w-full md:w-2/3 text-center">
+ Administración de Sesiones
+</div>
+
+<div class="text-4xl"></div>
+
+<div class="bg-gradient-to-r from-sky-600 to-indigo-700 text-white p-6 rounded-xl w-full md:w-2/3 text-center">
+
+<h3 class="text-xl font-bold">
+ Comunicación confiable entre aplicaciones
 </h3>
 
-<p class="text-sm">
-Indica dónde se encuentra la información.
-</p>
-
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-
-<h3 class="font-semibold">
-📦 Bus de Datos
-</h3>
-
-<p class="text-sm">
-Transporta información entre CPU y memoria.
-</p>
-
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-
-<h3 class="font-semibold">
-🎛 Bus de Control
-</h3>
-
-<p class="text-sm">
-Coordina todas las operaciones de lectura y escritura.
+<p class="text-sm mt-2">
+Entrega correcta de la información según las necesidades de cada servicio digital.
 </p>
 
 </div>
 
 </div>
-
-</div>
-
-<!-- ENSAMBLADOR -->
-
-<div class="card bg-indigo-50 p-8 rounded-2xl border">
-
-<h2 class="text-2xl font-bold text-indigo-700 mb-6">
-💻 Lenguaje Ensamblador
-</h2>
-
-<div class="grid md:grid-cols-4 gap-6">
-
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">MOV</h3>
-<p class="text-sm">
-Transfiere datos entre memoria y registros.
-</p>
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">LOAD / STORE</h3>
-<p class="text-sm">
-Lee y escribe datos en memoria.
-</p>
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">PUSH</h3>
-<p class="text-sm">
-Guarda información en la pila.
-</p>
-</div>
-
-<div class="bg-white rounded-xl border p-5">
-<h3 class="font-semibold">POP</h3>
-<p class="text-sm">
-Recupera información desde la pila.
-</p>
-</div>
-
-</div>
-
-<p class="mt-6 text-gray-600">
-Estas instrucciones muestran cómo el procesador mueve continuamente información entre registros y memoria durante la ejecución de un programa.
-</p>
 
 </div>
 
 <!-- CONCLUSIÓN -->
 
-<div class="card bg-slate-100 p-8 rounded-2xl border">
+<div class="card bg-slate-100 p-6 rounded-2xl border">
 
 <h2 class="text-2xl font-bold text-slate-700 mb-4">
-🎓 Importancia para la Ingeniería en Software
+ Idea principal
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
-Comprender la organización de la memoria permite desarrollar software más eficiente, optimizar el uso de recursos, reducir tiempos de acceso y entender cómo interactúan el hardware y el lenguaje ensamblador durante la ejecución de cualquier aplicación.
+<p class="text-gray-700 leading-relaxed">
+La capa de transporte permite que múltiples aplicaciones compartan una misma conexión de red de manera organizada. TCP proporciona confiabilidad mediante control de errores y sesiones, mientras que UDP ofrece rapidez para aplicaciones en tiempo real. Ambos protocolos responden a necesidades diferentes y son esenciales para el funcionamiento de Internet.
 </p>
 
 </div>
@@ -371,7 +440,7 @@ Comprender la organización de la memoria permite desarrollar software más efic
 <!-- FOOTER -->
 
 <div class="bg-gray-100 p-4 text-center text-xs text-gray-500">
-Infografía educativa • Organización y Arquitectura Computacional • Memoria y Procesamiento de la Información
+Infografía educativa sobre la Capa de Transporte, TCP, UDP y Administración de Sesiones
 </div>
 
 </div>
@@ -379,4 +448,3 @@ Infografía educativa • Organización y Arquitectura Computacional • Memoria
 </body>
 
 </html>
-```
